@@ -37,6 +37,7 @@ Function ExportTo-Excel {
                 If ($PSObject -ne $null) {
                     $ret = @()
                     Foreach ($line in $PSObject) {
+                        $NewObject = New-Object -TypeName PSObject
                         foreach ($header in $line.psobject.properties) {
                             $Value = $header.value
                             if ($Value -ne $null) {
