@@ -23,7 +23,6 @@ Function Exportto-HTML {
     .EXAMPLE
     # List services and hotfixes and just display html to screen   
     Get-Hotfix | select Description,HotFixID,InstalledOn | Exportto-HTML -Title "Hotfixes" 
-    1.0 - Initial version
     #>
     [cmdletbinding()]
     param([parameter(ValueFromPipeline=$true,Mandatory=$false,Position=0)][psobject[]]$InObject,
