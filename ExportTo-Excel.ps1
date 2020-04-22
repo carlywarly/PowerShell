@@ -68,7 +68,7 @@ Function ExportTo-Excel {
                                 $value = "" 
                             }
                             $HeaderName = (([regex]::replace(([regex]::replace($header.name,"[A-Z][a-z]+"," $&")),"[A-Z][A-Z]+"," $&")).replace("  "," ").trim())
-                            $NewObject | Add-Member Noteproperty –Name $HeaderName –Value $Value
+                            $NewObject | Add-Member Noteproperty -Name $HeaderName -Value $Value
                         }
                         $ret += $NewObject 
                     }
