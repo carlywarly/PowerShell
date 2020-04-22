@@ -30,7 +30,6 @@ Function Exportto-HTML {
     param([parameter(ValueFromPipeline=$true,Mandatory=$false,Position=0)][psobject[]]$InObject,
         [parameter(ValueFromPipeline=$false,Mandatory=$False,Position=1)][string]$Path = "",
         [parameter(ValueFromPipeline=$false,Mandatory=$False,Position=2)][string]$Title = "",
-        [parameter(ValueFromPipeline=$false,Mandatory=$False,Position=3)][String]$Colour = "Red",
         [parameter(ValueFromPipeline=$false,Mandatory=$False)][Switch]$NoStyle = $False,
         [parameter(ValueFromPipeline=$false,Mandatory=$False)][Switch]$NoSort = $False,
         [parameter(ValueFromPipeline=$false,Mandatory=$False)][Switch]$List = $False
